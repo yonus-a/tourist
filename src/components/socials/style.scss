@@ -1,0 +1,21 @@
+@use "/src/mixin.scss" as *;
+
+.socials {
+  @include align-center;
+
+  ul {
+    @include flex-gap(0.5em);
+
+    a {
+      @include size(32px, 32px);
+      @include items-center;
+      border-radius: 50%;
+      border: 1px solid var(--color-white);
+
+      svg {
+        @include size(19px, 19px);
+        fill: var(--color-white);
+      }
+    }
+  }
+}

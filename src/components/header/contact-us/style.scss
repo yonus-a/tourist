@@ -1,0 +1,29 @@
+@use "/src/mixin.scss" as *;
+
+.header-contact-us {
+  background-color: #14141f;
+
+  .container {
+    @include space-between;
+    height: 45px;
+  }
+
+  address {
+    @include flex-gap(1em);
+    font-style: normal;
+
+    a,
+    p {
+      @include align-center;
+      color: var(--color-white);
+
+      svg {
+        margin-right: 0.5em;
+      }
+    }
+  }
+
+  @include on-mobile {
+    display: none;
+  }
+}

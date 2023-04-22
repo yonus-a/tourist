@@ -1,0 +1,50 @@
+@use "/src/mixin.scss" as *;
+
+.main-nav {
+  border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+
+  .container {
+    @include space-between;
+
+    .group {
+      display: flex;
+
+      a.logo {
+        @include align-center;
+        @include font("Nunito", 2.5em, var(--color-primary));
+        gap: 0.3em;
+      }
+
+      .mobile-cta {
+        display: none;
+        padding: 0.25em 0.75em;
+        border: 1px solid #eee;
+
+        svg {
+          @include size(17px, 21px);
+        }
+      }
+    }
+  }
+
+  @include on-mobile {
+    padding: 1em 0;
+
+    .container {
+      display: block;
+
+      .group {
+        align-items: center;
+        justify-content: space-between;
+
+        a.logo {
+          font-size: calc(1.4em + 1.4vw);
+        }
+
+        .mobile-cta {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@use "/src/mixin.scss" as *;
+
+.left-col {
+  @include align-center;
+
+  .menubar {
+    display: flex;
+
+    > li > a {
+      @include align-center;
+      @include font-size(1.12em, black);
+      transition: color 0.3s ease 0s;
+      margin-right: 1.56em;
+      position: relative;
+      height: 97px;
+
+      &[aria-haspopup] {
+        .chevron-down {
+          @include size(11px, 11px);
+          margin-left: 0.3em;
+        }
+      }
+
+      &.active {
+        color: var(--color-primary);
+        border-bottom: 1px solid var(--color-primary);
+      }
+
+      &:hover {
+        color: var(--color-primary);
+      }
+
+      &::after {
+        @include size(0, 1px);
+        content: "";
+        position: absolute;
+        left: 50%;
+        background-color: var(--color-primary);
+        bottom: 0;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
+
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    [role="menu"] {
+      position: absolute;
+      background: var(--color-white);
+      padding: 0.5em 0;
+      width: 158px;
+
+      > li > a {
+        padding: 0.25em 1em;
+        display: block;
+        width: 100%;
+
+        &:hover {
+          background: #eee;
+        }
+      }
+    }
+  }
+
+  .register {
+    @include back-color(var(--color-primary), var(--color-white));
+    padding: 0.5em 1.5em;
+    border-radius: 3em;
+  }
+
+  @include on-mobile {
+    display: none;
+    border-top: 1px solid #eee;
+    margin-top: 0.7em;
+
+    &.open {
+      display: block;
+    }
+
+    .menubar {
+      display: block;
+
+      > li > a {
+        height: unset;
+        padding: 10px 0;
+
+        &.active {
+          border-bottom: none;
+        }
+
+        &:hover::after {
+          width: 0;
+          left: 50%;
+        }
+      }
+
+      [role="menu"] {
+        position: static;
+        width: 100%;
+      }
+    }
+
+    .register {
+      display: inline-block;
+    }
+  }
+}
