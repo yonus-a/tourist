@@ -1,5 +1,11 @@
+@use "/src/mixin.scss" as *;
+
 header {
   position: fixed;
   width: 100%;
   top: 0;
+
+  @include on-mobile {
+    position: static;
+  }
 }

@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Heebo";
+  src: url("./fonts/Heebo-Regular.woff2") format("woff2"), url("./fonts/Heebo-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-ExtraBold.woff2") format("woff2"), url("./fonts/Nunito-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
 :root {
   --color-white: #f5f5f5;
   --color-primary: #86b817;
@@ -7,6 +21,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 1em;
+  max-width: 100%;
 }
 
 body {
