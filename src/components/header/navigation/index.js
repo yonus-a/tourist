@@ -5,12 +5,14 @@ import Container from "../../container";
 import useNav from "../../../hooks/useNav";
 import Button from "../../button";
 import LeftCol from "./left-col";
+import useHeaderSticky from "../../../hooks/useHeaderSticky";
 
 export default function Navigation() {
+  var headerRef = useHeaderSticky();
   useNav();
 
   return (
-    <nav className="main-nav">
+    <nav className="main-nav" ref={headerRef}>
       <Container>
         <div class="group">
           <a href="#" className="logo">

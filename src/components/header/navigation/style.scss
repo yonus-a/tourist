@@ -2,6 +2,29 @@
 
 .main-nav {
   border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+
+  &.sticky {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+
+    .left-col {
+      @include align-center;
+
+      .menubar {
+        display: flex;
+
+        > li > a {
+          height: 67px;
+          color: #000;
+        }
+      }
+    }
+  }
 
   .container {
     @include space-between;
@@ -28,6 +51,7 @@
   }
 
   @include on-mobile {
+    position: static;
     padding: 1em 0;
 
     .container {
