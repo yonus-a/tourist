@@ -17,16 +17,43 @@ section.services {
       box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
       background-color: #fff;
       padding: 40px 24px;
+      transition: all 0.3s;
 
       .icon {
         font-size: 3em;
         color: var(--color-primary);
+        transition: all 0.3s;
       }
 
       .title {
         font-size: 20px;
         margin: 24px 0 8px 0;
       }
+
+      &:hover {
+        background-color: var(--color-primary);
+        color: #fff;
+
+        .icon {
+          color: #fff;
+        }
+      }
+    }
+
+    .delay1 {
+      animation-delay: 0.1s;
+    }
+
+    .delay2 {
+      animation-delay: 0.3s;
+    }
+
+    .delay3 {
+      animation-delay: 0.5s;
+    }
+
+    .delay4 {
+      animation-delay: 0.7s;
     }
   }
 }
