@@ -10,10 +10,10 @@ export default function About() {
       <Container>
         <img
           src={AboutImg}
-          className="about-img animate__animated animate__fadeInUp"
+          className="about-img wow animate__animated animate__fadeInUp"
           alt=""
         />
-        <div className="group animate__animated animate__fadeInUp">
+        <div className="group wow animate__animated animate__fadeInUp">
           <p className="primary-title">ABOUT US</p>
           <h2 className="secondary-title">
             Welcome to <span>Tourist</span>
