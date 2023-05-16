@@ -17,7 +17,7 @@ export default function Services() {
         <h2 className="secondary-title">Our Services</h2>
         <div class="wrapper">
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay1"
+            className="card wow animate__animated animate__fadeInUp delay1"
             data-wow-delay="0.1s"
           >
             <FontAwesomeIcon className="icon" icon={faGlobe} />
@@ -28,7 +28,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay2"
+            className="card wow animate__animated animate__fadeInUp delay2"
             data-wow-delay="0.3s"
           >
             <FontAwesomeIcon className="icon" icon={faHotel} />
@@ -39,7 +39,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay3"
+            className="card wow animate__animated animate__fadeInUp delay3"
             data-wow-delay="0.5s"
           >
             <FontAwesomeIcon className="icon" icon={faUser} />
@@ -50,7 +50,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay4"
+            className="card wow animate__animated animate__fadeInUp delay4"
             data-wow-delay="0.7s"
           >
             <FontAwesomeIcon className="icon" icon={faCog} />
@@ -61,7 +61,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay1"
+            className="card wow animate__animated animate__fadeInUp delay1"
             data-wow-delay="0.1s"
           >
             <FontAwesomeIcon className="icon" icon={faGlobe} />
@@ -72,7 +72,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay2"
+            className="card wow animate__animated animate__fadeInUp delay2"
             data-wow-delay="0.3s"
           >
             <FontAwesomeIcon className="icon" icon={faHotel} />
@@ -83,7 +83,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay3"
+            className="card wow animate__animated animate__fadeInUp delay3"
             data-wow-delay="0.5s"
           >
             <FontAwesomeIcon className="icon" icon={faUser} />
@@ -94,7 +94,7 @@ export default function Services() {
             </p>
           </div>
           <div
-            className="card wow fadeInUp animate__animated animate__fadeInUp delay4"
+            className="card wow animate__animated animate__fadeInUp delay4"
             data-wow-delay="0.7s"
           >
             <FontAwesomeIcon className="icon" icon={faCog} />
