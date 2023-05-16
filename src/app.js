@@ -12,7 +12,7 @@ export default function App() {
     document.body.removeChild(loader);
 
     new WOW.WOW({
-      live: false,
+      boxClass: "animate__animated",
     }).init();
   }, []);
 
