@@ -1,0 +1,91 @@
+@use "/src/mixin.scss" as *;
+
+.packages {
+  margin-top: 96px;
+  text-align: center;
+
+  .secondary-title {
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+
+    .card {
+      box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+
+      &__image {
+        vertical-align: middle;
+      }
+
+      &__info {
+        display: flex;
+
+        span {
+          flex: 1 1 0;
+          padding: 8px 0;
+          border: 1px solid #eee;
+          margin: 0 -1px -1px 0;
+
+          svg {
+            color: var(--color-primary);
+          }
+        }
+      }
+
+      &__body {
+        padding: 1.5em;
+
+        &__price {
+          font-size: 28px;
+        }
+
+        &__rate {
+          font-size: 14px;
+          color: var(--color-primary);
+        }
+
+        &__desc {
+          margin: 1em 0;
+          color: #808b8d;
+        }
+
+        &__cta {
+          a {
+            padding: 0.25em 1em;
+            font-family: "Nunito", sans-serif;
+            font-size: 15px;
+            background-color: var(--color-primary);
+            color: #fff;
+
+            &:first-child {
+              border-radius: 1rem 0 0 1rem;
+              border-right: 1px solid #eee;
+            }
+
+            &:last-child {
+              border-radius: 0 1rem 1rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    @include on-tablet {
+      flex-wrap: wrap;
+
+      .card {
+        width: calc(50% - 0.75em);
+      }
+    }
+
+    @include on-mobile {
+      .card {
+        width: 100%;
+      }
+    }
+  }
+}

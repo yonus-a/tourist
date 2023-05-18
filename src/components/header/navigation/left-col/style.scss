@@ -70,7 +70,7 @@
     border-radius: 3em;
   }
 
-  @include on-mobile {
+  @include on-tablet {
     display: none;
     border-top: 1px solid #eee;
     margin-top: 0.7em;

@@ -66,7 +66,7 @@
       width: 40%;
     }
 
-    @media (max-width: 992px) {
+    @include on-tablet {
       .tile-group {
         flex-direction: column;
         width: 50%;
@@ -82,7 +82,7 @@
       }
     }
 
-    @media (max-width: 767px) {
+    @include on-mobile {
       flex-direction: column;
 
       .tile-group {

@@ -48,9 +48,17 @@
 
 // breakpoints
 
-@mixin on-mobile {
+@mixin on-tablet {
   & {
     @media (max-width: 992px) {
+      @content;
+    }
+  }
+}
+
+@mixin on-mobile {
+  & {
+    @media (max-width: 767px) {
       @content;
     }
   }
