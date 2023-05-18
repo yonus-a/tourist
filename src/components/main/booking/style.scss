@@ -1,0 +1,104 @@
+@use "/src/mixin.scss" as *;
+
+.booking {
+  margin-top: 96px;
+
+  .container {
+    display: flex;
+    padding: 3em;
+    background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)), url(./booking.jpg) no-repeat center;
+    background-size: cover;
+    align-items: center;
+    color: #fff;
+
+    .col {
+      width: 50%;
+      padding: 0 1.5em;
+    }
+
+    .left-col {
+      .subtitle {
+        font-size: 34px;
+        font-family: "Nunito", sans-serif;
+        margin-bottom: 0.7em;
+      }
+
+      p {
+        margin-bottom: 1.5em;
+      }
+
+      .cta {
+        padding: 1em 3em;
+        border: 1px solid #fff;
+        display: inline-block;
+        color: #fff;
+        margin-top: 0.5em;
+      }
+    }
+
+    .right-col {
+      .title {
+        font-size: 38px;
+        margin-bottom: 0.6em;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+
+        * {
+          padding: 16px 0.75em;
+          background-color: transparent;
+          border: 1px solid #fff;
+          color: #777;
+        }
+
+        input,
+        select {
+          width: calc(50% - 0.6em);
+        }
+
+        textarea {
+          width: 100%;
+          height: 100px;
+        }
+
+        button {
+          width: 100%;
+          padding: 1em 12px;
+          color: #fff;
+        }
+      }
+    }
+
+    .cta {
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: #eee;
+        color: #000;
+      }
+    }
+
+    @include on-mobile {
+      flex-direction: column;
+
+      .col {
+        width: 100%;
+      }
+
+      .right-col {
+        margin-top: 3em;
+
+        form {
+          flex-direction: column;
+
+          * {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

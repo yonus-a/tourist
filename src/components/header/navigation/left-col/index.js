@@ -7,7 +7,7 @@ export default function LeftCol() {
   useMenu();
 
   return (
-    <div className="left-col">
+    <div className="nav-left-col">
       <ul
         id="Menubar"
         role="menubar"
