@@ -6,6 +6,7 @@ import Destinations from "./destinations";
 import Packages from "./packages";
 import Booking from "./booking";
 import Process from "./process";
+import Guide from "./guide";
 
 export default function Main() {
   return (
@@ -17,6 +18,7 @@ export default function Main() {
       <Packages />
       <Booking />
       <Process />
+      <Guide />
     </main>
   );
 }
